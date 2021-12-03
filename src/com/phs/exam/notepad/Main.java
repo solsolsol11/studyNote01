@@ -1,9 +1,6 @@
 package com.phs.exam.notepad;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -96,5 +93,24 @@ class Article{
     public String toString(){
         return String.format("{id : %d title : %s body : %s}",id,title,body);
     }
+
+}
+
+class Rq{
+    String url;
+
+    Rq(String url){
+        this.url = url;
+    }
+
+    static Map<String, String> getParams(){
+        return null;
+    }
+    static String getUrlPath(){
+        return null;
+    }
+}
+
+class Util{
 
 }
